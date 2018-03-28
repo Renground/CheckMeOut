@@ -2,7 +2,8 @@ EXECUTABLE=CheckMeOut
 CXX=g++
 
 all: main.o order.o item.o registerController.o StoreInventory.o \
-	cashierView.o customerView.o keypadController.o
+  cashierView.o customerView.o keypadController.o \
+	ObserverPattern/ObserverPattern.cpp
 	$(CXX) main.o order.o item.o registerController.o StoreInventory.o \
 	cashierView.o customerView.o keypadController.o \
 	-o $(EXECUTABLE)
